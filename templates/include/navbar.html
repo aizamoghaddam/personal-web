@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #NavBar{
+            width: 100vw;
+            height: 65px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 0 0 15px 15px;
+            background: rgba(255, 255, 255, 0.121);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.284);
+            direction: rtl;
+
+        }
+        #NavBar a{
+            text-decoration: none;
+            color: #fff;
+            margin: 20px;
+            font-weight: bold;
+            position: relative;
+        }
+        .hoverA:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+        .hoverA:focus:after,
+        .hoverA:hover:after{
+        width: 100%;
+        left: 0%;
+        }
+        #NavBar h1{
+            color: #fff;
+            margin-left: 20px;
+        }
+        #NavBar h1 span{
+            color: #00eee2;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="NavBar">
+            <div>
+                <a href="{% url 'home' %}" class="hoverA">صفحه اصلی</a>
+                <a href="{% url 'about' %}" class="hoverA">درباره من</a>
+                <a href="{% url 'work' %}" class="hoverA">نمونه کار ها</a>
+                <a href="{% url 'contact' %}" class="hoverA">راه های ارتباطی</a>
+
+
+
+            </div>
+
+            <h1><span>My</span>Profile</h1>
+        </div>
+    </nav>
+</body>
+</html>

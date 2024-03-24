@@ -1,0 +1,95 @@
+@font-face {
+    font-family: pinar;
+    src: url(../../fonts/PINAR-BOLD.TTF);
+}
+@font-face {
+    font-family: Vogue;
+    src: url(../../fonts/Vogue-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000000;
+}
+h2{
+    font-family: pinar;
+    color: #F72798;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+.list img{
+    width: 40px;
+}
+.html{
+    color: #ff7300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.css{
+    color: #0084ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.python{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffd700;
+}
+.jango{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ae00ff;
+}
+.range{
+    width: 200px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.htmlrange{
+    width: 60%;
+    height: 100%;
+    background: #ff7300;
+    border-radius: 6px;
+}
+.cssrange{
+    width: 60%;
+    height: 100%;
+    background: #0084ff;
+    border-radius: 6px;
+}
+.pythonrange{
+    width: 80%;
+    height: 100%;
+    background: #ffd700;
+    border-radius: 6px;
+}
+.jangorange{
+    width: 30%;
+    height: 100%;
+    background: #ae00ff;
+    border-radius: 6px;
+}

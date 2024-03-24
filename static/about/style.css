@@ -1,0 +1,33 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+
+body{
+      height: 100vh;
+      background-image: url("photo/one.jfif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: none;
+
+}
+
+
+.div-1{
+      background: rgba(255, 255, 255, 0.121);
+      backdrop-filter: blur(20px);
+      width:95%; height: 85%;
+      border-radius:6px;
+      margin:auto;
+      padding:10px;
+}
+
+.h1{
+    color:brown;
+}
+
+#p1{
+    color:#968383;
+    font-size:30px;
+}

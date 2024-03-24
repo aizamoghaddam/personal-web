@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block html %}<html lang="en" dir="rtl">{% endblock %}
+{% block title %} <title> home </title> {% endblock %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+            <section>
+            <article>
+                <img style="border-radius:250px;" src="{% static 'home/Photo/Aiza.png' %}" alt="Alireza">
+            </article>
+
+            <figure>
+                <p class="Hello">HELLO _</p>
+                <h2>WELCOME TO MY  <span id="typedtext"></span></h2>
+                <p class="LoremText"></p>
+                <a href="../static/home/Pages/Skills.html" target="_blank">
+                    <button class="btn">
+                        Skills
+                    </button>
+                </a>
+            </figure>
+        </section>
+
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script>
+            var typed = new Typed('#typedtext', {
+                strings: ['website'],
+                typeSpeed: 120,
+                backSpeed: 120,
+                loop: true
+            });
+        </script>
+
+
+{% endblock %}
+

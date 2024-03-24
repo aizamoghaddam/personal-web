@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block html %}<html lang="en" dir="rtl">{% endblock %}
+
+{% block title %} <title> contact </title> {% endblock %}
+
+
+{% block css %}<link rel="stylesheet" href="{% static 'contact/style.css' %}">{% endblock %}
+
+
+
+{% block content %}
+    <br>
+        <div class="div-1" dir="ltr">
+
+            <div class="div-2">
+                <h1>soshial media</h1>
+                <div style="align-item:left">
+                    <a href="https://www.instagram.com/re.moghaddam/" style="color:gray; text-decoration:none; font-size:25px"> <img width="20" height="20" src="https://img.icons8.com/doodle/20/instagram-new.png" alt="instagram-new"/> instagram</a><br>
+                    <a href="https://twitter.com/re_moghaddam" style="color:gray; text-decoration:none; font-size:25px"><img width="20" height="20" src="https://img.icons8.com/color/20/twitterx--v2.png" alt="twitterx--v2"/> twitter</a><br>
+                    <a href="https://t.me/re_moghaddam" style="color:gray; text-decoration:none; font-size:25px"><img width="20" height="20" src="https://img.icons8.com/material/20/000000/telegram-app.png" alt="telegram-app"/>  telegram</a><br>
+                    <a href="https://github.com/aizamoghaddam" style="color:gray; text-decoration:none; font-size:25px"><img width="20" height="20" src="https://img.icons8.com/material-rounded/20/000000/github.png" alt="github"/> github</a>
+                </div>
+
+            </div>
+
+            <form  style="color:white" class="col-sm-3" action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" class="btn btn-primary" style="width:100px">
+            </form>
+
+
+        </div>
+    <br>
+
+
+{% endblock %}
